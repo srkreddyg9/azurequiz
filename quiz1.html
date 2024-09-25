@@ -3,14 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quiz 1: Azure Fundamentals</title>
+    <title>Quiz 1: Azure Basics</title>
     <style>
-        /* You can reuse the styles from index.html or customize them */
         body {
             font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
             margin: 0;
             padding: 20px;
-            background-color: #f4f4f4;
         }
         .quiz-container {
             max-width: 600px;
@@ -23,21 +22,90 @@
         h1 {
             text-align: center;
         }
-        /* Add other styles as needed */
+        .question {
+            margin-bottom: 20px;
+        }
+        .options {
+            list-style-type: none;
+            padding: 0;
+        }
+        .options li {
+            margin: 10px 0;
+        }
+        .btn {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #28a745;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .btn:hover {
+            background-color: #218838;
+        }
+        .result {
+            margin: 20px 0;
+            font-weight: bold;
+            font-size: 18px;
+            text-align: center;
+        }
     </style>
 </head>
 <body>
 
 <div class="quiz-container">
-    <h1>Quiz 1: Azure Fundamentals</h1>
+    <h1>Quiz 1: Azure Basics</h1>
 
     <div class="question">
-        <p>1. What is Azure?</p>
+        <p>1. What is cloud computing?</p>
         <ul class="options">
-            <li><input type="radio" name="q1" value="a"> A) A cloud computing platform and service created by Microsoft</li>
-            <li><input type="radio" name="q1" value="b"> B) A version of Windows OS</li>
-            <li><input type="radio" name="q1" value="c"> C) A programming language</li>
-            <li><input type="radio" name="q1" value="d"> D) A Microsoft Office application</li>
+            <li><input type="radio" name="q1" value="a"> A) A physical server farm</li>
+            <li><input type="radio" name="q1" value="b"> B) Delivery of computing services over the internet</li>
+            <li><input type="radio" name="q1" value="c"> C) A type of database</li>
+            <li><input type="radio" name="q1" value="d"> D) A software application for desktops</li>
+        </ul>
+    </div>
+
+    <div class="question">
+        <p>2. Which of the following is a benefit of cloud computing?</p>
+        <ul class="options">
+            <li><input type="radio" name="q2" value="a"> A) Scalability</li>
+            <li><input type="radio" name="q2" value="b"> B) Pay-as-you-go pricing</li>
+            <li><input type="radio" name="q2" value="c"> C) High availability</li>
+            <li><input type="radio" name="q2" value="d"> D) All of the above</li>
+        </ul>
+    </div>
+
+    <div class="question">
+        <p>3. What is Microsoft Azure?</p>
+        <ul class="options">
+            <li><input type="radio" name="q3" value="a"> A) A video game</li>
+            <li><input type="radio" name="q3" value="b"> B) A cloud computing platform and service</li>
+            <li><input type="radio" name="q3" value="c"> C) A web browser</li>
+            <li><input type="radio" name="q3" value="d"> D) An operating system</li>
+        </ul>
+    </div>
+
+    <div class="question">
+        <p>4. What is an Azure subscription?</p>
+        <ul class="options">
+            <li><input type="radio" name="q4" value="a"> A) A membership plan for Microsoft Office</li>
+            <li><input type="radio" name="q4" value="b"> B) A logical container for Azure resources</li>
+            <li><input type="radio" name="q4" value="c"> C) A free trial of Azure services</li>
+            <li><input type="radio" name="q4" value="d"> D) A subscription to a streaming service</li>
+        </ul>
+    </div>
+
+    <div class="question">
+        <p>5. Which of the following best describes a Resource Group in Azure?</p>
+        <ul class="options">
+            <li><input type="radio" name="q5" value="a"> A) A collection of user accounts</li>
+            <li><input type="radio" name="q5" value="b"> B) A logical container for managing Azure resources</li>
+            <li><input type="radio" name="q5" value="c"> C) A physical server rack</li>
+            <li><input type="radio" name="q5" value="d"> D) A group of virtual machines</li>
         </ul>
     </div>
 
@@ -48,7 +116,7 @@
 
 <script>
     function checkAnswers() {
-        const correctAnswers = ['a'];
+        const correctAnswers = ['b', 'd', 'b', 'b', 'b'];
         let score = 0;
 
         correctAnswers.forEach((answer, index) => {
