@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz 2: Azure Basic Building Blocks</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        .quiz-container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+        }
+        .question {
+            margin-bottom: 20px;
+        }
+        .options {
+            list-style-type: none;
+            padding: 0;
+        }
+        .options li {
+            margin: 10px 0;
+        }
+        .btn {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .btn:hover {
+            background-color: #0056b3;
+        }
+        .result {
+            margin: 20px 0;
+            font-weight: bold;
+            font-size: 18px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<div class="quiz-container">
+    <h1>Quiz 2: Azure Basic Building Blocks</h1>
+
+    <div class="question">
+        <p>1. What is Azure Virtual Network (VNet) primarily used for?</p>
+        <ul class="options">
+            <li><input type="radio" name="q1" value="a"> A) Storing data in the cloud</li>
+            <li><input type="radio" name="q1" value="b"> B) Managing user identities</li>
+            <li><input type="radio" name="q1" value="c"> C) Creating isolated network environments in Azure</li>
+            <li><input type="radio" name="q1" value="d"> D) Running web applications</li>
+        </ul>
+    </div>
+
+    <div class="question">
+        <p>2. What is the primary function of Azure Storage?</p>
+        <ul class="options">
+            <li><input type="radio" name="q2" value="a"> A) Hosting virtual machines</li>
+            <li><input type="radio" name="q2" value="b"> B) Storing and managing large amounts of data</li>
+            <li><input type="radio" name="q2" value="c"> C) Providing identity and access management</li>
+            <li><input type="radio" name="q2" value="d"> D) Monitoring Azure resources</li>
+        </ul>
+    </div>
+
+    <div class="question">
+        <p>3. Which of the following is an Azure service for managing databases?</p>
+        <ul class="options">
+            <li><input type="radio" name="q3" value="a"> A) Azure App Service</li>
+            <li><input type="radio" name="q3" value="b"> B) Azure Virtual Network</li>
+            <li><input type="radio" name="q3" value="c"> C) Azure SQL Database</li>
+            <li><input type="radio" name="q3" value="d"> D) Azure Monitor</li>
+        </ul>
+    </div>
+
+    <div class="question">
+        <p>4. What is Azure Blob Storage designed for?</p>
+        <ul class="options">
+            <li><input type="radio" name="q4" value="a"> A) Storing large amounts of unstructured data like text or binary data</li>
+            <li><input type="radio" name="q4" value="b"> B) Hosting web applications</li>
+            <li><input type="radio" name="q4" value="c"> C) Managing virtual networks</li>
+            <li><input type="radio" name="q4" value="d"> D) Running databases</li>
+        </ul>
+    </div>
+
+    <div class="question">
+        <p>5. Which Azure service would you use to securely store secrets like API keys and passwords?</p>
+        <ul class="options">
+            <li><input type="radio" name="q5" value="a"> A) Azure Key Vault</li>
+            <li><input type="radio" name="q5" value="b"> B) Azure SQL Database</li>
+            <li><input type="radio" name="q5" value="c"> C) Azure Virtual Machines</li>
+            <li><input type="radio" name="q5" value="d"> D) Azure Monitor</li>
+        </ul>
+    </div>
+
+    <div class="question">
+        <p>6. What is Azure Load Balancer used for?</p>
+        <ul class="options">
+            <li><input type="radio" name="q6" value="a"> A) Distributing incoming network traffic across multiple Azure resources</li>
+            <li><input type="radio" name="q6" value="b"> B) Storing data</li>
+            <li><input type="radio" name="q6" value="c"> C) Managing virtual machines</li>
+            <li><input type="radio" name="q6" value="d"> D) Providing network security</li>
+        </ul>
+    </div>
+
+    <div class="question">
+        <p>7. Which Azure service allows you to deploy, manage, and scale web applications?</p>
+        <ul class="options">
+            <li><input type="radio" name="q7" value="a"> A) Azure App Service</li>
+            <li><input type="radio" name="q7" value="b"> B) Azure Blob Storage</li>
+            <li><input type="radio" name="q7" value="c"> C) Azure Virtual Network</li>
+            <li><input type="radio" name="q7" value="d"> D) Azure Key Vault</li>
+        </ul>
+    </div>
+
+    <div class="question">
+        <p>8. What is the purpose of Azure Traffic Manager?</p>
+        <ul class="options">
+            <li><input type="radio" name="q8" value="a"> A) To manage traffic between different Azure regions</li>
+            <li><input type="radio" name="q8" value="b"> B) To monitor network performance</li>
+            <li><input type="radio" name="q8" value="c"> C) To provide network security</li>
+            <li><input type="radio" name="q8" value="d"> D) To store large files</li>
+        </ul>
+    </div>
+
+    <div class="question">
+        <p>9. What is Azure Virtual Machine (VM) primarily used for?</p>
+        <ul class="options">
+            <li><input type="radio" name="q9" value="a"> A) Running applications in an isolated environment</li>
+            <li><input type="radio" name="q9" value="b"> B) Storing data in the cloud</li>
+            <li><input type="radio" name="q9" value="c"> C) Managing user identities</li>
+            <li><input type="radio" name="q9" value="d"> D) Hosting web applications</li>
+        </ul>
+    </div>
+
+    <div class="question">
+        <p>10. Which service in Azure is best suited for storing relational data?</p>
+        <ul class="options">
+            <li><input type="radio" name="q10" value="a"> A) Azure Blob Storage</li>
+            <li><input type="radio" name="q10" value="b"> B) Azure SQL Database</li>
+            <li><input type="radio" name="q10" value="c"> C) Azure Virtual Machine</li>
+            <li><input type="radio" name="q10" value="d"> D) Azure Traffic Manager</li>
+        </ul>
+    </div>
+
+    <button class="btn" onclick="checkAnswers()">Submit</button>
+    
+    <div class="result" id="result"></div>
+</div>
+
+<script>
+    function checkAnswers() {
+        const correctAnswers = ['c', 'b', 'c', 'a', 'a', 'a', 'a', 'a', 'a', 'b'];
+        let score = 0;
+
+        correctAnswers.forEach((answer, index) => {
+            const questionName = `q${index + 1}`;
+            const selectedOption = document.querySelector(`input[name="${questionName}"]:checked`);
+
+            if (selectedOption && selectedOption.value === answer) {
+                score++;
+            }
+        });
+
+        const resultDiv = document.getElementById('result');
+        resultDiv.textContent = `You scored ${score} out of ${correctAnswers.length}.`;
+    }
+</script>
+
+</body>
+</html>
