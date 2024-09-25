@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz 1: Azure Fundamentals</title>
+    <style>
+        /* You can reuse the styles from index.html or customize them */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        .quiz-container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+        }
+        /* Add other styles as needed */
+    </style>
+</head>
+<body>
+
+<div class="quiz-container">
+    <h1>Quiz 1: Azure Fundamentals</h1>
+
+    <div class="question">
+        <p>1. What is Azure?</p>
+        <ul class="options">
+            <li><input type="radio" name="q1" value="a"> A) A cloud computing platform and service created by Microsoft</li>
+            <li><input type="radio" name="q1" value="b"> B) A version of Windows OS</li>
+            <li><input type="radio" name="q1" value="c"> C) A programming language</li>
+            <li><input type="radio" name="q1" value="d"> D) A Microsoft Office application</li>
+        </ul>
+    </div>
+
+    <button class="btn" onclick="checkAnswers()">Submit</button>
+    
+    <div class="result" id="result"></div>
+</div>
+
+<script>
+    function checkAnswers() {
+        const correctAnswers = ['a'];
+        let score = 0;
+
+        correctAnswers.forEach((answer, index) => {
+            const questionName = `q${index + 1}`;
+            const selectedOption = document.querySelector(`input[name="${questionName}"]:checked`);
+
+            if (selectedOption && selectedOption.value === answer) {
+                score++;
+            }
+        });
+
+        const resultDiv = document.getElementById('result');
+        resultDiv.textContent = `You scored ${score} out of ${correctAnswers.length}.`;
+    }
+</script>
+
+</body>
+</html>
